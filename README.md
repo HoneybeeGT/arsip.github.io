@@ -13,12 +13,14 @@
       background-size: cover;
       color: #c7c7c7;
     }
+
     header {
       background-color: rgba(23, 26, 33, 0.8);
       padding: 20px;
       text-align: center;
       color: #66c0f4;
     }
+
     .hero {
       display: flex;
       align-items: center;
@@ -29,6 +31,7 @@
       font-weight: bold;
       text-shadow: 2px 2px 4px #000;
     }
+
     .container {
       padding: 30px 20px;
       max-width: 1000px;
@@ -36,17 +39,20 @@
       background: rgba(26, 26, 26, 0.8);
       border-radius: 10px;
     }
+
     .points-menu {
       display: flex;
       flex-direction: column;
       gap: 15px;
       margin-bottom: 40px;
     }
+
     .point-item {
       background: rgba(42, 42, 42, 0.8);
       border-radius: 5px;
       padding: 15px 20px;
     }
+
     .point-link {
       text-decoration: none;
       color: #c7c7c7;
@@ -56,9 +62,11 @@
       padding-left: 10px;
       transition: background-color 0.3s;
     }
+
     .point-link:hover {
       background-color: rgba(51, 51, 51, 0.8);
     }
+
     .point-content {
       overflow: hidden;
       max-height: 0;
@@ -68,13 +76,16 @@
       padding-top: 15px;
       border-top: 1px solid #444;
     }
+
     .point-content.open {
       max-height: 1000px; /* Use a high enough value to accommodate the content */
       opacity: 1;
     }
+
     .point-content h2 {
       color: #66c0f4;
     }
+
     footer {
       background-color: rgba(23, 26, 33, 0.8);
       text-align: center;
@@ -82,6 +93,7 @@
       color: #7f8c8d;
       font-size: 0.9em;
     }
+
     /* Responsive Styles: Adjust layout for devices with a max-width of 600px */
     @media (max-width: 600px) {
       .hero {
@@ -128,6 +140,7 @@
           </p>
         </div>
       </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">2. Letak</a>
         <div class="point-content">
@@ -137,7 +150,8 @@
             Pada awalnya ibukota kerajaan arsip berada di Rumah Ana sebelum dipindahkan ke depan F1.
           </p>
         </div>
-      </div>      
+      </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">3. Tokoh</a>
         <div class="point-content">
@@ -173,7 +187,8 @@
             Bersama dengan Atha, dia telah membawa budaya India kepada Kesultanan Arsip.
           </p>
         </div>
-      </div>      
+      </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">4. Politik</a>
         <div class="point-content">
@@ -182,7 +197,8 @@
             apa lek
           </p>
         </div>
-      </div>   
+      </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">5. Ekonomi</a>
         <div class="point-content">
@@ -191,7 +207,8 @@
             Kita kaya
           </p>
         </div>
-      </div>     
+      </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">6. Budaya</a>
         <div class="point-content">
@@ -200,7 +217,8 @@
             Stress semua lek
           </p>
         </div>
-      </div>      
+      </div>
+      
       <div class="point-item">
         <a class="point-link" href="#">7. Bukti Sejarah</a>
         <div class="point-content">
@@ -208,7 +226,8 @@
           <p></p>
           <img src="https://files.catbox.moe/yifsiu.jpg" alt="Bukti Sejarah" style="width: 100%; border-radius: 5px;">
         </div>
-      </div>      
+      </div>
+      
     </div>
   </div>
 

@@ -12,15 +12,13 @@
       background: url('https://files.catbox.moe/k149m3.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #c7c7c7;
-    }
-
+    }  
     header {
       background-color: rgba(23, 26, 33, 0.8);
       padding: 20px;
       text-align: center;
       color: #66c0f4;
     }
-
     /* Removing hero-specific background so it becomes part of global background */
     .hero {
       display: flex;
@@ -32,7 +30,6 @@
       font-weight: bold;
       text-shadow: 2px 2px 4px #000;
     }
-
     /* Adding a semi-transparent background for the container improves readability */
     .container {
       padding: 30px 20px;
@@ -41,21 +38,18 @@
       background: rgba(26, 26, 26, 0.8);
       border-radius: 10px;
     }
-
     .points-menu {
       display: flex;
       flex-direction: column;
       gap: 15px;
       margin-bottom: 40px;
     }
-
     /* Each point item contains the clickable link and its description */
     .point-item {
       background: rgba(42, 42, 42, 0.8);
       border-radius: 5px;
       padding: 15px 20px;
     }
-
     /* Clickable link styling */
     .point-link {
       text-decoration: none;
@@ -66,11 +60,9 @@
       padding-left: 10px;
       transition: background-color 0.3s;
     }
-
     .point-link:hover {
       background-color: rgba(51, 51, 51, 0.8);
     }
-
     /* Point content is no longer hidden with display:none.
        Instead, we hide it via max-height and opacity and toggle an "open" class. */
     .point-content {
@@ -82,17 +74,14 @@
       padding-top: 15px;
       border-top: 1px solid #444;
     }
-
     /* When "open", allow the content to expand and fade in */
     .point-content.open {
       max-height: 1000px;  /* Use a value high enough to show the content fully */
       opacity: 1;
     }
-
     .point-content h2 {
       color: #66c0f4;
     }
-
     footer {
       background-color: rgba(23, 26, 33, 0.8);
       text-align: center;
@@ -100,7 +89,6 @@
       color: #7f8c8d;
       font-size: 0.9em;
     }
-
     @media (max-width: 600px) {
       .hero {
         font-size: 1.5em;
@@ -121,7 +109,6 @@
   <div class="container">
     <!-- Clickable List with Inline Descriptions -->
     <div class="points-menu">
-    
       <div class="point-item">
         <a class="point-link" href="#">1. Awal Berdirinya</a>
         <div class="point-content">
@@ -132,7 +119,6 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">2. Letak</a>
         <div class="point-content">
@@ -143,7 +129,6 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">3. Tokoh</a>
         <div class="point-content">
@@ -179,7 +164,6 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">4. Getting Around</a>
         <div class="point-content">
@@ -189,7 +173,6 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">5. Best Time to Visit</a>
         <div class="point-content">
@@ -199,7 +182,6 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">6. Insider Tips</a>
         <div class="point-content">
@@ -209,18 +191,15 @@
           </p>
         </div>
       </div>
-      
       <div class="point-item">
         <a class="point-link" href="#">7. Bukti Sejarah </a>
         <div class="point-content">
           <h2>Bukti Sejarah</h2>
           <p>
-            
           </p>
           <img src="https://files.catbox.moe/yifsiu.jpg" alt="Example Accommodation" style="width: 100%; border-radius: 5px;">
         </div>
       </div>
-      
     </div>
   </div>
 

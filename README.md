@@ -1,24 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arsip Soal</title>
   <style>
-    /* Set the background image for the entire page */
+    /* Global Styles */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: url('https://files.catbox.moe/k149m3.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #c7c7c7;
-    }  
+    }
     header {
       background-color: rgba(23, 26, 33, 0.8);
       padding: 20px;
       text-align: center;
       color: #66c0f4;
     }
-    /* Removing hero-specific background so it becomes part of global background */
     .hero {
       display: flex;
       align-items: center;
@@ -29,11 +29,10 @@
       font-weight: bold;
       text-shadow: 2px 2px 4px #000;
     }
-    /* Adding a semi-transparent background for the container improves readability */
     .container {
       padding: 30px 20px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 20px auto;
       background: rgba(26, 26, 26, 0.8);
       border-radius: 10px;
     }
@@ -43,13 +42,11 @@
       gap: 15px;
       margin-bottom: 40px;
     }
-    /* Each point item contains the clickable link and its description */
     .point-item {
       background: rgba(42, 42, 42, 0.8);
       border-radius: 5px;
       padding: 15px 20px;
     }
-    /* Clickable link styling */
     .point-link {
       text-decoration: none;
       color: #c7c7c7;
@@ -62,8 +59,6 @@
     .point-link:hover {
       background-color: rgba(51, 51, 51, 0.8);
     }
-    /* Point content is no longer hidden with display:none.
-       Instead, we hide it via max-height and opacity and toggle an "open" class. */
     .point-content {
       overflow: hidden;
       max-height: 0;
@@ -73,9 +68,8 @@
       padding-top: 15px;
       border-top: 1px solid #444;
     }
-    /* When "open", allow the content to expand and fade in */
     .point-content.open {
-      max-height: 1000px;  /* Use a value high enough to show the content fully */
+      max-height: 1000px; /* Use a high enough value to accommodate the content */
       opacity: 1;
     }
     .point-content h2 {
@@ -88,10 +82,26 @@
       color: #7f8c8d;
       font-size: 0.9em;
     }
+    /* Responsive Styles: Adjust layout for devices with a max-width of 600px */
     @media (max-width: 600px) {
       .hero {
         font-size: 1.5em;
         height: 200px;
+      }
+      .container {
+        padding: 15px 10px;
+        margin: 10px;
+      }
+      .point-item {
+        padding: 10px 15px;
+      }
+      .point-link {
+        font-size: 1em;
+        padding-left: 8px;
+        border-left-width: 3px;
+      }
+      header, footer {
+        padding: 15px;
       }
     }
   </style>
@@ -131,7 +141,7 @@
       <div class="point-item">
         <a class="point-link" href="#">3. Tokoh</a>
         <div class="point-content">
-          <h2>Tokoh </h2>
+          <h2>Tokoh</h2>
           <h3>Septiana</h3>
           <p>
             Dia adalah salah satu tokoh penting yang mengide untuk membuat Kesultanan Arsip, dengan rumahnya
@@ -159,7 +169,8 @@
           </p>
           <h3>Akmal</h3>
           <p>
-            Awalnya dia bukanlah warga Kesultanan, namun dia diterima atas request istimewa dari pendiri- pendiri arsip. Bersama dengan Atha, dia telah membawa budaya India kepada Kesultanan Arsip.
+            Awalnya dia bukanlah warga Kesultanan, namun dia diterima atas request istimewa dari pendiri-pendiri arsip.
+            Bersama dengan Atha, dia telah membawa budaya India kepada Kesultanan Arsip.
           </p>
         </div>
       </div>
@@ -191,12 +202,11 @@
         </div>
       </div>
       <div class="point-item">
-        <a class="point-link" href="#">7. Bukti Sejarah </a>
+        <a class="point-link" href="#">7. Bukti Sejarah</a>
         <div class="point-content">
           <h2>Bukti Sejarah</h2>
-          <p>
-          </p>
-          <img src="https://files.catbox.moe/yifsiu.jpg" alt="Example Accommodation" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <img src="https://files.catbox.moe/yifsiu.jpg" alt="Bukti Sejarah" style="width: 100%; border-radius: 5px;">
         </div>
       </div>
     </div>
@@ -214,8 +224,6 @@
         link.addEventListener("click", function(e) {
           e.preventDefault();
           const content = this.nextElementSibling;
-          
-          // Toggle the 'open' class to smoothly transition the panel
           content.classList.toggle("open");
         });
       });
